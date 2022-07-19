@@ -1,0 +1,942 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body-c {
+  background-image: url(../Imagenes/maderaroja1.jpg);
+  background-size: cover;
+}
+
+.body-g {
+  background-image: url(../Imagenes/Fondo-g.jpg);
+  background-size: cover;
+}
+
+.body-p {
+  background-image: url(../Imagenes/Fondos/Fondoproductos.jpg);
+  background-size: cover;
+}
+
+/*Header inicio*/
+/*index inicio*/
+.seccion1 {
+  background-image: url(../Imagenes/Imagen-seccion-1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+}
+
+.seccion1 .hdr {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 700px 400px minmax(1000px);
+      grid-template-columns: 700px 400px minmax(1000px);
+  -ms-grid-rows: 100px 100px 200px 350px 250px;
+      grid-template-rows: 100px 100px 200px 350px 250px;
+      grid-template-areas: "logo nav nav" "logo form form" "nombre form form" "granos form form" "frase2 frase frase";
+}
+
+.seccion1 .frase2 {
+  font-family: "Dancing Script";
+  font-size: 50px;
+  width: 500px;
+  color: khaki;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: frase2;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.seccion1 .logo {
+  height: 200px;
+  width: 400px;
+  padding-left: 10px;
+  padding-top: 10px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.seccion1 .frase {
+  width: 850px;
+  height: 200px;
+  opacity: 0.3;
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: frase;
+}
+
+.seccion1 .nombre {
+  font-family: "Stardos Stencil";
+  font-size: 75px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: nombre;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #000;
+}
+
+.seccion1 .granos {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: granos;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.seccion1 nav {
+  height: 75px;
+  width: 500px;
+  background-color: #4d0113;
+  border-radius: 10px;
+  padding-top: 16px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+  -ms-flex-item-align: none;
+      -ms-grid-row-align: none;
+      align-self: none;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.seccion1 .formulario {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: form;
+  background-image: url(../Imagenes/papiro.png);
+  width: 409px;
+  height: 609px;
+  padding: 50px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 35px;
+}
+
+@media screen and (max-width: 500px) {
+  .seccion1 {
+    background-image: url(../Imagenes/Fondos/Fondo-hdr-responsive2.jpg);
+    height: auto;
+  }
+  .seccion1 .hdr {
+    -ms-grid-columns: minmax(380px, 500px);
+        grid-template-columns: minmax(380px, 500px);
+    -ms-grid-rows: 210px 50px 67px auto;
+        grid-template-rows: 210px 50px 67px auto;
+        grid-template-areas: "logo" "nombre" "nav" "form";
+  }
+  .seccion1 .nombre {
+    font-size: 40px;
+  }
+  .seccion1 nav {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+  }
+  .seccion1 .formulario {
+    margin-right: 0px;
+  }
+  .seccion1 .granos {
+    display: none;
+  }
+  .seccion1 .frase {
+    display: none;
+  }
+  .seccion1 .frase2 {
+    display: none;
+  }
+}
+
+/*index final*/
+/*galeria inicio*/
+.hdr-galeria, .hdr-contacto, .hdr-productos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 80px 30px 550px;
+      grid-template-columns: auto 80px 30px 550px;
+  -ms-grid-rows: auto 100px;
+      grid-template-rows: auto 100px;
+      grid-template-areas: "logo-g carrito cantidad nav-g" "nombre-g carrito cantidad nav-g";
+}
+
+.hdr-galeria .nombre-g, .hdr-contacto .nombre-g, .hdr-productos .nombre-g {
+  font-family: "Stardos Stencil";
+  font-size: 75px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nombre-g;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  justify-self: flex-start;
+  color: #000;
+}
+
+.hdr-galeria .logo-g, .hdr-contacto .logo-g, .hdr-productos .logo-g {
+  height: 200px;
+  width: 400px;
+  padding-left: 130px;
+  padding-top: 10px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo-g;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: none;
+      justify-self: none;
+}
+
+.hdr-galeria nav, .hdr-contacto nav, .hdr-productos nav {
+  height: 75px;
+  width: 500px;
+  background-color: #4b0112;
+  border-radius: 10px;
+  padding-top: 16px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: nav-g;
+  -ms-flex-item-align: none;
+      -ms-grid-row-align: none;
+      align-self: none;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.hdr-galeria .carro, .hdr-contacto .carro, .hdr-productos .carro {
+  height: 75px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: carrito;
+  -ms-flex-item-align: none;
+      -ms-grid-row-align: none;
+      align-self: none;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.hdr-galeria .productoscarrrito, .hdr-contacto .productoscarrrito, .hdr-productos .productoscarrrito {
+  height: 30px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: cantidad;
+  -ms-flex-item-align: none;
+      -ms-grid-row-align: none;
+      align-self: none;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+@media screen and (max-width: 500px) {
+  .hdr-galeria, .hdr-contacto, .hdr-productos {
+    -ms-grid-columns: minmax(380px, 500px);
+        grid-template-columns: minmax(380px, 500px);
+    -ms-grid-rows: 210px 50px 67px;
+        grid-template-rows: 210px 50px 67px;
+        grid-template-areas: "logo-g" "nombre-g"  "nav-g";
+  }
+  .hdr-galeria nav, .hdr-contacto nav, .hdr-productos nav {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+  }
+  .hdr-galeria .nombre-g, .hdr-contacto .nombre-g, .hdr-productos .nombre-g {
+    font-size: 40px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .hdr-galeria .logo-g, .hdr-contacto .logo-g, .hdr-productos .logo-g {
+    padding: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-left: 15px;
+  }
+}
+
+/*galeria final*/
+/*contactos inicio*/
+/*contactos final*/
+/*productos inicio*/
+.hdr-productos .nombre-g {
+  color: #302f2f;
+}
+
+main2 .table {
+  color: white;
+  margin-bottom: 0px;
+}
+
+/*productos final*/
+/*Header Final*/
+.main-g section#imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+}
+
+.main-g img {
+  opacity: 0.7;
+  border-style: solid;
+  border-color: black;
+  width: 500px;
+}
+
+.main-g img:hover {
+  opacity: 1;
+  border-color: white;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+@media screen and (max-width: 500px) {
+  .main-g {
+    padding-top: 25px;
+  }
+  .main-g section#imagenes {
+    row-gap: 25px;
+  }
+  .main-g img {
+    opacity: 1;
+    width: 100%;
+    border-style: none;
+  }
+  .main-g img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.main-c form {
+  padding-left: 550px;
+  padding-right: 550px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: blanchedalmond;
+  font-family: "Stardos Stencil";
+  font-size: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .main-c form {
+    padding: 0px;
+  }
+}
+
+.main-p {
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-p .prod, .main-p .prod-t, .main-p .prod-ch {
+  background-color: grey;
+  border-radius: 30px;
+  height: 680px;
+  width: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 400px 50px 140px 30px auto;
+      grid-template-rows: 400px 50px 140px 30px auto;
+      grid-template-areas: "img" "name" "des" "price" "button";
+}
+
+.main-p .prod img, .main-p .prod-t img, .main-p .prod-ch img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  height: 380px;
+  width: 192px;
+  -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+}
+
+.main-p .prod name, .main-p .prod-t name, .main-p .prod-ch name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: name;
+  -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+  padding-bottom: 5px;
+}
+
+.main-p .prod des, .main-p .prod-t des, .main-p .prod-ch des {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: des;
+  -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+  padding-left: 20px;
+}
+
+.main-p .prod price, .main-p .prod-t price, .main-p .prod-ch price {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: price;
+  -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+}
+
+.main-p .prod .boton-p, .main-p .prod-t .boton-p, .main-p .prod-ch .boton-p {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: button;
+  -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+}
+
+.main-p .prod-t img {
+  height: 300px;
+  width: 300px;
+}
+
+.main-p .prod-ch img {
+  height: 380px;
+  width: 200px;
+}
+
+/*Shop Online*/
+.seccion2 {
+  background-color: #6b0f1a;
+  width: 100%;
+  height: 1200px;
+  color: gray;
+  font-family: 'Ramaraja', serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 400px 400px;
+      grid-template-columns: auto 400px 400px;
+  -ms-grid-rows: 600px 300px 300px;
+      grid-template-rows: 600px 300px 300px;
+      grid-template-areas: "desc car car" "sub1 sub2 sub3" "sub1 sub4 sub5";
+}
+
+.seccion2 .subsection1 {
+  font-family: 'Ramaraja', serif;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: sub1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-style: groove;
+  border-radius: 20px;
+  border-color: silver;
+  border-width: 10px;
+  padding: 20px;
+}
+
+.seccion2 .subsection1 .vo {
+  font-size: 40px;
+  font-family: 'Stardos Stencil';
+}
+
+.seccion2 .subsection1 li {
+  font-size: 25px;
+}
+
+.seccion2 .subsection2, .seccion2 .subsection3, .seccion2 .subsection4, .seccion2 .subsection5 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  background-color: #3c3c3b;
+  border-radius: 20px;
+  width: 350px;
+  height: 250px;
+  padding: 20px;
+  font-size: 20px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sub2;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 200px;
+      grid-template-columns: 100px 200px;
+  -ms-grid-rows: 100px 100px;
+      grid-template-rows: 100px 100px;
+      grid-template-areas: "imag etiq" "p p";
+}
+
+.seccion2 .subsection2 p, .seccion2 .subsection3 p, .seccion2 .subsection4 p, .seccion2 .subsection5 p {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: p;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.seccion2 .subsection2 .img, .seccion2 .subsection3 .img, .seccion2 .subsection4 .img, .seccion2 .subsection5 .img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: imag;
+}
+
+.seccion2 .subsection2 .etiq, .seccion2 .subsection3 .etiq, .seccion2 .subsection4 .etiq, .seccion2 .subsection5 .etiq {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: etiq;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: none;
+      justify-self: none;
+  font-size: 30px;
+  font-family: 'Stardos Stencil';
+}
+
+.seccion2 .subsection3 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: sub3;
+}
+
+.seccion2 .subsection4 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: sub4;
+}
+
+.seccion2 .subsection5 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: sub5;
+}
+
+.seccion2 .desc {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: desc;
+  font-size: x-large;
+  padding-left: 30px;
+}
+
+.seccion2 .desc .tit {
+  font-family: 'Stardos Stencil';
+  font-size: 40px;
+}
+
+.seccion2 .car {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: car;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 100%;
+  width: 600px;
+}
+
+@media screen and (max-width: 500px) {
+  .seccion2 {
+    height: auto;
+    -ms-grid-columns: minmax(380px, 500px);
+        grid-template-columns: minmax(380px, 500px);
+    -ms-grid-rows: 1300px 450px 600px 275px 275px 275px 275px;
+        grid-template-rows: 1300px 450px 600px 275px 275px 275px 275px;
+        grid-template-areas: "desc"  "car" "sub1" "sub2"  "sub3"  "sub4" "sub5";
+  }
+  .seccion2 .car {
+    height: 100%;
+    width: auto;
+  }
+}
+
+/*Fin Shop Online*/
+/*Productos*/
+.enc {
+  background-color: #6b0f1a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Ramaraja', serif;
+  text-align: center;
+}
+
+.TodosProd {
+  background-color: #6b0f1a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.TodosProd .productos img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+  height: 380px;
+  width: 192px;
+}
+
+.TodosProd .productos2 img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+  height: 300px;
+  width: 300px;
+}
+
+.TodosProd .productos3 img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  -ms-flex-item-align: center;
+      align-self: center;
+      justify-self: center;
+  height: 380px;
+  width: 220px;
+}
+
+.TodosProd .carousel {
+  width: 400px;
+}
+
+.TodosProd .prod, .TodosProd .main-p .prod-t, .main-p .TodosProd .prod-t, .TodosProd .main-p .prod-ch, .main-p .TodosProd .prod-ch {
+  background-color: grey;
+  border-radius: 30px;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  padding-left: 39px;
+  -ms-grid-columns: 320px;
+      grid-template-columns: 320px;
+  -ms-grid-rows: 400px 40px 140px 40px 50px;
+      grid-template-rows: 400px 40px 140px 40px 50px;
+      grid-template-areas: "img" "name" "des" "price" "button";
+}
+
+.TodosProd .prod img, .TodosProd .main-p .prod-t img, .main-p .TodosProd .prod-t img, .TodosProd .main-p .prod-ch img, .main-p .TodosProd .prod-ch img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+
+.TodosProd .prod name, .TodosProd .main-p .prod-t name, .main-p .TodosProd .prod-t name, .TodosProd .main-p .prod-ch name, .main-p .TodosProd .prod-ch name {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: name;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-bottom: 5px;
+}
+
+.TodosProd .prod des, .TodosProd .main-p .prod-t des, .main-p .TodosProd .prod-t des, .TodosProd .main-p .prod-ch des, .main-p .TodosProd .prod-ch des {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: des;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-left: 20px;
+}
+
+.TodosProd .prod price, .TodosProd .main-p .prod-t price, .main-p .TodosProd .prod-t price, .TodosProd .main-p .prod-ch price, .main-p .TodosProd .prod-ch price {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: price;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.boton {
+  background-color: #6b0f1a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40.5%;
+}
+
+.boton button {
+  height: 50px;
+  width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .TodosProd {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .boton {
+    padding: 25px;
+  }
+  .boton button {
+    height: 50px;
+    width: 100%;
+  }
+}
+
+/*Fin Productos*/
+.footnote {
+  background-color: #222121;
+  color: grey;
+  font-family: 'Ramaraja', serif;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.footnote .fot {
+  font-size: x-large;
+  text-align: justify;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .footnote .fot {
+    font-size: large;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+/*Footer inicio*/
+footer {
+  background-color: #222121;
+  color: grey;
+  font-family: 'Ramaraja', serif;
+  font-size: 25px;
+}
+
+footer .red1 {
+  width: auto;
+}
+
+footer .red2 {
+  width: auto;
+}
+
+footer img {
+  height: 45px;
+}
+
+footer section#redes1, footer section#redes2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  padding-top: 5px;
+}
+
+footer .contacto {
+  width: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 150px minmax(400px);
+      grid-template-columns: auto 150px minmax(400px);
+  -ms-grid-rows: 40px auto auto auto;
+      grid-template-rows: 40px auto auto auto;
+      grid-template-areas: "t   t    t   " "ic1 con1 con1" "ic2 con2 con2" "ic3 con3 con3";
+}
+
+footer .contacto .titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: t;
+}
+
+footer .contacto .ic1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ic1;
+}
+
+footer .contacto .ic2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ic2;
+}
+
+footer .contacto .ic3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: ic3;
+}
+
+footer .contacto section#con1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: con1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: none;
+      justify-self: none;
+}
+
+footer .contacto section#con2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: con2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: none;
+      justify-self: none;
+}
+
+footer .contacto section#con3 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: con3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: none;
+      justify-self: none;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  footer .contacto {
+    -ms-grid-columns: auto 150px auto;
+        grid-template-columns: auto 150px auto;
+  }
+  footer .contacto section#con3 {
+    font-size: large;
+  }
+  footer .red1 {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+/*Footer final*/
+/*Copyrigth*/
+.copy {
+  background-color: #222121;
+  color: grey;
+  font-family: 'Ramaraja', serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.copy h4 {
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding-top: 7px;
+}
+
+@media screen and (max-width: 500px) {
+  .copy {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

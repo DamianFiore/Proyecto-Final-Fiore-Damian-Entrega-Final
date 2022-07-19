@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Capulus Coffee</title>
+    <link rel="shortcut icon" href="./Imagenes/logo.png">
+    <meta name="description" content="Vive la experiencia Capulus Coffee, una variedad de granos seleccionados de las mejores regiones productoras de café. Sabores únicos que despertarán tus sentidos. También ofrecemos una diversa cantidad de Chocolates, producidos con los granos de cacao cultivados en la India. El Té en hebras que ofrece nuestra empresa provee una gran cantidad de beneficios para diversas situaciones de la vida.">
+    <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--Link Style-->
+    <link rel="stylesheet" href="./scss/estilo.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Katibeh&family=Quattrocento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ramaraja&family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
+    <!--wow animated-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Script-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!--Presentation-->
+    <div class="seccion1">
+        <header class="hdr">
+            <a class="logo" href="index.html"><img src="./Imagenes/logo.png" alt="logo"></a>
+            <h1 class="nombre">CAPULUS COFFEE</h1>
+            <nav style="font-family: 'Stardos Stencil';">
+                <ul class="nav nav-pills d-flex justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link active bg-dark" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="productos.html"
+                            role="button" aria-expanded="false">PRODUCTOS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="productos.html">Cafe</a></li>
+                            <li><a class="dropdown-item" href="productos.html">Chocolate</a></li>
+                            <li><a class="dropdown-item" href="productos.html">Té en hebras</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galería.html">GALERÍA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="./Imagenes/granos.png" class="granos" alt="granos">
+            <p class="frase2">"Te espero con un café... <br> trae contigo la vida entera, hay tanto por hablar"</p>
+            <img src="./Imagenes/frase.png" class="frase" alt="frase">
+
+            <div class="formulario" style="font-family: 'Stardos Stencil';">
+                <div>REGISTRARME</div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                    <input type="label" class="form-control" id="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Apellido</label>
+                    <input type="label" class="form-control" id="apellido">
+                </div>
+                <div>
+                    <label for="start">Fecha de nacimiento</label>
+                    <input type="date" id="edad" name="trip-start" value="2018-07-22" min="1900-01-01"
+                        max="2022-12-31">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text text-dark">Nunca compartiremos esta información con otros.
+                    </div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Acepto los Términos y Condiciones</label>
+                </div>
+                <button id="enviar" type="submit" class="btn btn-dark">Enviar</button>
+                <button id="cancelar" type="submit" class="btn btn-dark">Cancelar</button>
+            </div>
+        </header>
+    </div>
+
+    <!--Shop Online-->
+    <div class="seccion2">
+        <div class="desc">
+            <p>
+            <div class="tit">SANTUARIOS MODERNOS</div>
+            Las cafeterías son nuestros santuarios modernos. Espacios bellamente adornados, donde la gente se reúne
+            para disfrutar de una experiencia trascendental, casi espiritual. La calidad del café ha avanzado mucho
+            en esta "tercera ola" de café. Durante la última década, ha habido una gran mejora en la calidad, el
+            enfoque, la técnica y la filosofía. Incluso los más escépticos reconocen al probarlo por primera vez,
+            que el café de especialidad no sabe como el café comercial consumido diariamente.
+            Sin embargo, el café todavía tiene mucho camino por recorrer. El café de especialidad es sinónimo de
+            "esnobismo" y "hipsterdom". <br>
+            <br>
+            "No creemos que nunca hayamos estado realmente en la "tercera ola" del café. Realmente hemos estado en
+            una especie de "ola borrosa", una crisis de identidad de la cultura del café. Hemos pasado la última
+            década buscando a tientas es decir, mientras mejoramos enormemente la calidad hasta que nosotros, como
+            industria, nos identifiquemos de una manera que sea aceptada y adoptada por el consumidor, de la misma
+            manera que lo han hecho los cócteles artesanales y los bartenders de marca, nunca podremos lograr ese
+            verdadero estado de "tercera ola". <br>
+            -Lleywen Sinclair, Sprudge, 2012
+            </p>
+        </div>
+
+        <div class="car">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./Imagenes/Coffee Shops/CS-1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./Imagenes/Coffee Shops/CS-2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./Imagenes/Coffee Shops/CS-3.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./Imagenes/Coffee Shops/CS-4.jpg" alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./Imagenes/Coffee Shops/CS-5.jpg" alt="Fifth slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="subsection1">
+            <div class="vo">VENTA ONLINE</div>
+            <ul>
+                <li>Contamos con mas de 8 variedades de café con diferentes orígenes. </li>
+                <li>Diferentes productos para la elavoración de tu café.</li>
+                <li>4 intensidades de cápsulas con más de 8 blends únicos. (SUAVE-MEDIO-FUERTE-DECAF)</li>
+                <li>5 variedades de té en hebras, blends para deleitarte con los más ricos sabores.</li>
+                <li>Utilizamos materiales 100% reciclables.</li>
+            </ul>
+        </div>
+        <div class="subsection2 wow animate__animated animate__fadeInRight">
+            <img src="./Imagenes/Imagenes Seccion 2/capsulas-removebg.png" height="100px" alt="capsulas">
+            <div class="etiq">Cápsulas</div>
+            <p>Conoce nuestras variedades de cápsulas elaboradas con el mejor café Arábigo para que puedas disfrutar en
+            casa.</p> 
+        </div>
+        <div class="subsection3 wow animate__animated animate__fadeInRight">
+            <img src="./Imagenes/Imagenes Seccion 2/granos_de_cafe-removebg.png" height="100px" alt="granos">
+            <div class="etiq">Café en Grano</div>
+            <p>Café en grano o molido listos para disfrutar. Clásicos, Especiales, Saborizados y Descafeinados.</p>
+        </div>
+        <div class="subsection4 wow animate__animated animate__fadeInRight">
+            <img src="./Imagenes/Imagenes Seccion 2/cafetera-removebg.png" height="100px" alt="cafetera">
+            <div class="etiq">Cafeteras</div>
+            <p>Las distintas técnicas para elaborar un café se pueden desarrollar con la variedad de productos que
+            ofrecemos.</p> 
+        </div>
+        <div class="subsection5 wow animate__animated animate__fadeInRight">
+            <img src="./Imagenes/Imagenes Seccion 2/delivery-removebg.png" height="100px" alt="delivery">
+            <div class="etiq">Delivery</div>
+            <p>Lleva la experiencia CAPULUS a tu casa comprando desde la página.</p> 
+        </div>
+    </div>
+
+    <!--Slide Products-->
+    <div class="enc">
+        <h2 style="font-family: 'Stardos Stencil'; font-size: 50px;">PRODUCTOS CAPULUS COFFEE</h2>
+        <h1>Elige tu producto favorito</h1>
+    </div>
+    <div class="TodosProd">
+        <!--Carousel Coffee-->
+        <div class="productos d-flex justify-content-around">
+            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="9"
+                        aria-label="Slide 10"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="10"
+                        aria-label="Slide 11"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="11"
+                        aria-label="Slide 12"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="prod">
+                            <img src="./Imagenes/Etiopia.jpg" alt="etiopia">
+                            <name>ETIOPIA</name>
+                            <des>Un café muy dulce, con dejo de sabor a cítrico y floral. Acidez vivaz, un cuerpo sedoso y una complejidad de notas florales en el aroma, a veces con un toque de coco tostado.</des>
+                            <price>$1850</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Costa Rica.jpg" alt="costarica">
+                            <name>COSTA RICA</name>
+                            <des>De gran cuerpo y aroma, se asienta en boca, con notas achocolatadas hasta un rango de mayor complejidad, donde los buenos degustadores podrán encontrar sabores a los cítricos como naranja, además a melocotón, miel de abeja y vainilla, etc.</des>
+                            <price>$1500</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Vainilla.jpg" alt="vainilla">
+                            <name>VAINILLA</name>
+                            <des>Realizados con el grano 100% arabigo y extractos naturales hasta un 3%. Estos extractos se agregan durante el proceso de tostado, permitiendo deslizar un sutil sabor sin opacar la fuerza del cafe. Blend de granos 100 % arábigos.</des>
+                            <price>$1250</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolate.jpg" alt="chocolate">
+                            <name>CHOCOLATE</name>
+                            <des>Realizados con el grano 100% arabigo y extractos naturales hasta un 3%. Estos extractos se agregan durante el proceso de tostado, permitiendo deslizar un sutil sabor sin opacar la fuerza del cafe.</des>
+                            <price>$1250</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Congo.jpg" alt="congo">
+                            <name>CONGO</name>
+                            <des>Elegante y brillante acidez de arándano, azúcar de caña y notas de ciruela con cuerpo almibarado y buen equilibrio.</des>
+                            <price>$1850</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Colombian Decaff.jpg" alt="colombiandecaff">
+                            <name>COLOMBIAN DECAFF</name>
+                            <des>Aroma muy fragante, con mucha dulzura. Tratado para remover la cafeína permitiendo al café, conservar su cuerpo aroma y sabor.</des>
+                            <price>$1250</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Colombian Dark.jpg" alt="colombiandark">
+                            <name>COLOMBIAN DARK</name>
+                            <des>Un café muy dulce, con dejo de sabor a cítrico y floral. Acidez vivaz, un cuerpo sedoso y una complejidad de notas florales en el aroma.
+                                Nuestro Colombian Supremo sometido al máximo tueste intensificando aroma, sabor y reduciendo acidez.</des>
+                            <price>$1250</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Brasil Santos Bourdon.jpg" alt="brasilsantosbourdon">
+                            <name>BRASIL SANTOS BOURDON</name>
+                            <des>Blend de granos 100 % arábigos de Santos Bourbon en diferentes etapas, ciclos. El resultado un café más fino y equilibrado. Intensidad: Suave. Sofisticada selección de granos que conforman un blend suave y cremoso con un dejo levemente dulce.</des>
+                            <price>$1150</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Brasil Medium Roast.jpg" alt="brasilmediumroast">
+                            <name>BRASIL MEDIUM ROAST</name>
+                            <des>Un café muy dulce, con dejo de sabor a cítrico y floral. Acidez vivaz, un cuerpo sedoso y una complejidad de notas florales en el aroma. Nuestro Brasil Santos Bourbon con un tueste más intenso que potencia sus cualidades.</des>
+                            <price>$1150</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Papua Nueva Guinea.jpg" alt="papua">
+                            <name>PAPÚA NUEVA GUINEA</name>
+                            <des>Esta región disfruta de un clima fresco, templado y con precipitaciones todo el año, lo que genera condiciones micro climáticas ideales para su cultivo. Sabor audaz, notas de chocolate, dulce, ácido y afrutado con un cuerpo medio a fuerte y un final ligeramente cremoso y suave.</des>
+                            <price>$1950</price>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--Carousel Tea-->
+        <div class="productos2 d-flex justify-content-around">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="prod">
+                            <img src="./Imagenes/Black Tea.jpg" alt="Btea">
+                            <name>Black Tea</name>
+                            <des>El té negro es un té que se encuentra oxidado en mayor grado que otras variedades, con un aroma intenso y la justa dosis de amargura.
+                            </des>
+                            <price>$600</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Fire Tea.jpg" alt="FireTea">
+                            <name>Fire Tea</name>
+                            <des>La infusión Fire Tea es té rojo, hierbas y flores que estimulan la circulación sanguínea y actúan como afrodisíaco natural.
+                            </des>
+                            <price>$750</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Goog Night Tea.jpg" alt="GNtea">
+                            <name>Good Night Tea</name>
+                            <des>Good Night es un té de hierbas con la adición de adaptógenos, mejorando la calidad del sueño y relajando el cuerpo y la mente. El ritual perfecto para personas con exceso de trabajo.</des>
+                            <price>$750</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Immune support Tea.jpg" alt="IStea">
+                            <name>Immune Support</name>
+                            <des>Calentamiento de frutas y té de hierbas con la adición de adaptógenos y especias, lo que naturalmente fortalece el sistema inmunológico.</des>
+                            <price>$800</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Inner Peace  Tea.jpg" alt="IPtea">
+                            <name>Inner Peace Tea</name>
+                            <des>El té de hierbas  Inner Peace es como un buen amigo: choca los cinco en todos esos hermosos momentos en los que simplemente se deja llevar. La combinación de hierbas, adaptógenos y hongos Reishi te permite encontrar paz interior y alivio.</des>
+                            <price>$750</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Pure Beauty Tea.jpg" alt="PBtea">
+                            <name>Pure Beauty Tea</name>
+                            <des>Nuestro té suelto con la adición de adaptógenos es el mismo bueno y una parte integral del ritual de embellecimiento diario.</des>
+                            <price>$650</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Brain Booster Tea.jpg" alt="BBtea">
+                            <name>Brain Booster Tea</name>
+                            <des>Brain Booster es gravedad para tus pensamientos. El té suelto combina hierbas y adaptógenos que aumentan la concentración a corto plazo y apoyan el trabajo del cerebro. La infusión te da energía y reduce el impacto del estrés en tu mente.</des>
+                            <price>$850</price>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        <!--Carousel Chocolate-->
+        <div class="productos3 d-flex justify-content-around">
+            <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolates/Bittersweet Dark Chocolate.jpg" alt="Bittersweet Dark Chocolate">
+                            <name>Bittersweet Dark Chocolate</name>
+                            <des>Alto porcentaje de cacao y un mínimo de azúcar, se trata de explorar la personalidad y el sabor de los granos.
+                            </des>
+                            <price>$450</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolates/Chilli and cinnamon Dark Chocolate.jpg" alt="Chilli and cinnamon Dark Chocolate">
+                            <name>Chilli and cinnamon Dark Chocolate</name>
+                            <des>Equilibrio perfecto de canela suave y hojuelas de chile rojo ardiente con chocolate amargo al 70% ligeramente dulce. Obtenemos chiles orgánicos y canela localmente.
+                            </des>
+                            <price>$450</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolates/Coconut Milk Dark Chocolate.jpg" alt="Coconut Milk Dark Chocolate">
+                            <name>Coconut Milk Dark Chocolate</name>
+                            <des>Una barra de chocolate con leche vegana suave y cremosa hecha con deliciosa leche de coco. Esta barra no contiene lácteos y es indulgente.</des>
+                            <price>$450</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolates/Crunchy Peanut Butter Dark Chocolate.jpg" alt="Crunchy Peanut Butter Dark Chocolate">
+                            <name>Crunchy Peanut Butter Dark Chocolate</name>
+                            <des>Molimos mantequilla de maní orgánica en nuestro molinillo de piedra junto con el chocolate para obtener una barra suave como la seda, agregamos maní entero y trocitos de cacao crujientes para más textura.</des>
+                            <price>$450</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolates/Espresso Dark Chocolate.jpg" alt="Espresso Dark Chocolate">
+                            <name>Espresso Dark Chocolate</name>
+                            <des>Equilibrio perfecto entre el café orgánico de una sola finca y nuestro chocolate semidulce. El café y el cacao fueron elegidos por su sinergia, creando una armonía entre los sabores.</des>
+                            <price>$450</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolates/Rosemary & Sea Salt Dark Chocolate.jpg" alt="Rosemary & Sea Salt Dark Chocolate">
+                            <name>Rosemary & Sea Salt Dark Chocolate</name>
+                            <des>El sabor salado de la sal marina combinado con el sabor profundo y seductor del romero realza las notas dulces y ricas de chocolate del 70 % de chocolate amargo.</des>
+                            <price>$450</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolates/Sea Salt Dark Chocolate.jpg" alt="Sea Salt Dark Chocolate">
+                            <name>Sea Salt Dark Chocolate</name>
+                            <des>Chocolate negro al 70 % con sal marina de las salinas de Marakkanam para crear la máxima indulgencia.
+                            </des>
+                            <price>$450</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolates/Semi-Sweet Dark Chocolate.jpg" alt="Semi-Sweet Dark Chocolate">
+                            <name>Semi-Sweet Dark Chocolate</name>
+                            <des>Esta barra es una versión ligeramente más dulce de nuestro exclusivo chocolate amargo, una suave introducción al mundo del chocolate amargo.
+                            </des>
+                            <price>$450</price>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="prod">
+                            <img src="./Imagenes/Chocolates/Zesty Orange Dark Chocolate.jpg" alt="Zesty Orange Dark Chocolate">
+                            <name>Zesty Orange Dark Chocolate</name>
+                            <des>Exclusivo chocolate negro agridulce al 75 % y lo hemos combinado con naranja amarga y picante para crear una barra fresca y afrutada.
+                            </des>
+                            <price>$450</price>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="boton">
+        <a href="productos.html"><button type="button" class="btn btn-dark">Ir a la Tienda</button></a>
+    </div>
+
+    <div class="footnote">
+        <h2>Footnote</h2>
+        <div class="fot">
+            Nos enfocamos en brindar la mejor calidad y servicio que nuestros clientes se merecen. Ante cualquier
+            disconformidad con la empresa puede contactarnos vía email o dirigirse a la pestaña de contacto, a la
+            brevedad nos estaremos comunicando con usted para resolver su incomodidad.
+        </div>
+    </div>
+    
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="row m-0 justify-content-around">
+                <div class="contacto col-lg-4 col-xs-12 p-0">
+                    <div class="titulo d-inline-flex align-items-baseline">
+                        <p>Contacto</p>
+                    </div>
+                    <img class="ic1" src="./Imagenes/Imagenes Footer/whichapplication_conversation_email_phone_7097.png" alt="whatsapp logo">
+                    <section id="con1">+549 223#######</section>
+                    <img class="ic2" src="./Imagenes/Imagenes Footer/google_mail_gmail_logo_icon_159346.png" alt="gmail logo">
+                    <section id="con2">capulusinfo@gmail.com</section>
+                    <img class="ic3" src="./Imagenes/Imagenes Footer/google_map_location_logo_icon_159350.png" alt="ubicacion logo">
+                    <section id="con3">Mar del Plata, Buenos Aires, Argentina</section>
+                </div>
+                <div class="red1 col-lg-4 col-xs-12">
+                    <div class="d-inline-flex align-items-baseline">
+                        <div class="align-items-baseline">Síguenos en las redes</div>
+                    </div>
+                    <section id="redes1">
+                        <a href="https://www.facebook.com/"><img src="./Imagenes/Imagenes Footer/facebook_22663.png"
+                                alt="logo facebook">
+                        </a>
+                        <a href="https://www.instagram.com/"><img
+                                src="./Imagenes/Imagenes Footer/instagram_logo_icon_181738.png" alt="logo instagram"> </a>
+                        <a href="https://www.twitter.com/"><img src="./Imagenes/Imagenes Footer/twitter_social_7009.png"
+                                alt="logo twitter"> </a>
+                        <a href="https://www.youtube.com/"> <img src="./Imagenes/Imagenes Footer/youtube_22742.png"
+                                alt="logo youtube"> </a>
+                    </section>
+                </div>
+                <div class="red2 col-lg-4 col-xs-12 p-0">
+                    <div class="d-flex align-items-baseline ">
+                        <div class="align-items-baseline ">Medios de Pago</div>
+                    </div>
+                    <section id="redes2">
+                        <img src="./Imagenes/Imagenes Footer/Mastercard_icon-icons.com_60554.png" alt="mastercard">
+                        <img src="./Imagenes/Imagenes Footer/Maestro_icon-icons.com_60542.png" alt="maestro">
+                        <img src="./Imagenes/Imagenes Footer/Paypal-39_icon-icons.com_60555.png" alt="paypal">
+                        <img src="./Imagenes/Imagenes Footer/Visa_icon-icons.com_60549.png" alt="visa">
+                        <img src="./Imagenes/Imagenes Footer/American_Express_icon-icons.com_60519.png" alt="american">
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy">
+        <img src="./Imagenes/Imagenes Footer/copyright_icon_174587.png" alt="">
+        <h4>Copyright 2022 CAPULUS COFFEE</h4>
+    </div>
+
+    <!--Bootstrap scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!--wow scripts-->
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    <!--Java Script-->
+    <script src="JSindex.js"></script>
+</body>
+
+</html>

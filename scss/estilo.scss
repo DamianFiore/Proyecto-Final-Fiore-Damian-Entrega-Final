@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin texto($aling,$justify){
+    align-self: $aling;
+    justify-self: $justify;
+}
+@mixin imgprod ($h,$w) {
+    height: $h;
+    width: $w;
+}
+@mixin fuente1 ($font,$size) {
+    font-family: $font;
+    font-size: $size;    
+}
+
+.body-c{
+    background-image: url(../Imagenes/maderaroja1.jpg);
+    background-size: cover;
+}
+.body-g{
+    background-image: url(../Imagenes/Fondo-g.jpg);
+    background-size: cover;
+}
+.body-p{
+    background-image: url(../Imagenes/Fondos/Fondoproductos.jpg);
+    background-size: cover;
+}
+
+/*Header inicio*/
+/*index inicio*/
+.seccion1{
+    background-image: url(../Imagenes/Imagen-seccion-1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+
+    .hdr{
+        display: grid;
+        grid-template-columns: 700px 400px minmax(1000px);
+        grid-template-rows: 100px 100px 200px 350px 250px;
+        grid-template-areas: 
+                            "logo nav nav"
+                            "logo form form"
+                            "nombre form form"
+                            "granos form form"
+                            "frase2 frase frase";
+    }
+    .frase2{
+        @include fuente1('Dancing Script' , 50px);
+        width: 500px;
+        color: khaki;
+        grid-area: frase2;
+        @include texto(flex-start, center);
+    }
+    .logo{
+        height: 200px;
+        width: 400px;
+        padding-left: 10px;
+        padding-top: 10px;
+        grid-area: logo;
+        @include texto(center, center);
+    }
+    .frase{
+        width: 850px;
+        height: 200px;
+        opacity: 0.3;
+        grid-area: frase;
+    }
+    .nombre{
+        @include fuente1('Stardos Stencil', 75px);
+        grid-area: nombre;
+        @include texto(flex-start, center);
+        color: #000;
+    }
+    .granos{
+        grid-area: granos;
+        @include texto(flex-start, center);
+    }
+    
+    nav{
+        height: 75px;
+        width: 500px;
+        background-color: rgb(77, 1, 19);
+        border-radius: 10px;
+        padding-top: 16px;
+        grid-area: nav;
+        @include texto(none, end);
+    }
+    .formulario{
+        grid-area: form;
+        background-image: url(../Imagenes/papiro.png);
+        width: 409px;
+        height: 609px;
+        padding: 50px;
+        @include texto(flex-start, end);
+        margin-right: 35px;
+    }
+}
+@media screen and (max-width:500px) {
+    .seccion1{
+        background-image: url(../Imagenes/Fondos/Fondo-hdr-responsive2.jpg);
+        height: auto;
+    
+        .hdr{
+            grid-template-columns: minmax(380px,500px);
+            grid-template-rows: 210px 50px 67px auto;
+            grid-template-areas:"logo"
+                                "nombre"
+                                "nav"
+                                "form";
+        }
+        .nombre{
+            font-size: 40px;
+        }
+        nav{
+            @include imgprod(100%,100%);
+            font-size: 12px;
+        }
+        .formulario{
+            margin-right: 0px;
+        }
+        .granos{
+            display: none;
+        }
+        .frase{
+            display: none;
+        }
+        .frase2{
+            display: none;
+        }
+    }
+}
+/*index final*/
+
+/*galeria inicio*/
+.hdr-galeria{
+    display: grid;
+    grid-template-columns: auto 80px 30px 550px;
+    grid-template-rows: auto 100px;
+    grid-template-areas: 
+                        "logo-g carrito cantidad nav-g"
+                        "nombre-g carrito cantidad nav-g";
+    .nombre-g{
+        @include fuente1('Stardos Stencil', 75px);
+        grid-area: nombre-g;
+        @include texto(flex-start, flex-start);
+        color: #000;
+    }
+    .logo-g{
+        height: 200px;
+        width: 400px;
+        padding-left: 130px;
+        padding-top: 10px;
+        grid-area: logo-g;
+        @include texto(center, none);
+    }
+    nav{
+        height: 75px;
+        width: 500px;
+        background-color: rgb(75, 1, 18);
+        border-radius: 10px;
+        padding-top: 16px;
+        grid-area: nav-g;
+        @include texto(none, end);
+    }
+    .carro{
+        height: 75px;
+        grid-area: carrito;
+        @include texto(none,end);
+    }
+    .productoscarrrito{
+        height: 30px;
+        grid-area: cantidad;
+        @include texto(none,end);
+    }
+}
+@media screen and (max-width:500px) {
+    .hdr-galeria{
+        grid-template-columns: minmax(380px,500px);
+        grid-template-rows: 210px 50px 67px;
+        grid-template-areas:"logo-g"
+                            "nombre-g" 
+                            "nav-g";
+
+        nav{
+            @include imgprod(100%,100%);
+            font-size: 12px;
+        }
+        .nombre-g{
+            font-size: 40px;
+            @include texto(center, center);
+        }
+        .logo-g{
+            padding: 0px;
+            @include texto(center, center);
+            padding-left: 15px;
+        }
+    }
+}
+/*galeria final*/
+
+/*contactos inicio*/
+.hdr-contacto{
+    @extend .hdr-galeria;
+}
+/*contactos final*/
+
+/*productos inicio*/
+.hdr-productos{
+    @extend .hdr-galeria;
+    .nombre-g{
+        color: rgb(48, 47, 47);
+    }
+}
+main2{
+    .table{
+        color:white;
+        margin-bottom: 0px;
+    }
+}
+/*productos final*/
+
+/*Header Final*/
+
+.main-g{
+    section#imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 50px;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    img{
+        opacity: 0.7;
+        border-style: solid;
+        border-color: black;
+        width: 500px;
+    }
+    img:hover{
+        opacity: 1;
+        border-color: white;
+        transform: scale(1.1,1.1);
+        transition: all 1s;
+    }
+}
+@media screen and (max-width:500px) {
+    .main-g{
+        padding-top: 25px;
+        section#imagenes{
+            row-gap: 25px;
+        }
+        img{
+            opacity: 1;
+            width: 100%;
+            border-style: none;
+        }
+        img:hover{
+            transform: none;
+        }
+    }
+}
+
+.main-c{
+    form{
+        padding-left: 550px;
+        padding-right: 550px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: blanchedalmond;
+        @include fuente1('Stardos Stencil', 15px)
+    }
+}
+@media screen and (max-width:500px) {
+    .main-c{
+        form{
+            padding: 0px;
+        }
+    }
+}
+
+.main-p{
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 60px;
+    justify-content: center;
+    .prod{
+        background-color: grey;
+        border-radius: 30px;
+        height: 680px;
+        width: 400px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 400px 50px 140px 30px auto;
+        grid-template-areas:"img"
+                            "name"
+                            "des"
+                            "price"
+                            "button";
+        img{
+            grid-area: img;
+            @include imgprod(380px,192px);
+            @include texto(center, center);
+        }
+        name{
+            grid-area: name;
+            @include texto(center, center);
+            padding-bottom: 5px;
+        }
+        des{
+            grid-area: des;
+            @include texto(center, center);
+            padding-left: 20px;
+        }
+        price{
+            grid-area: price;
+            @include texto(center, center);
+        }
+        .boton-p{
+            grid-area: button;
+            @include texto(center, center);
+        }   
+    }
+    .prod-t{
+        @extend .prod;
+        img{
+            @include imgprod(300px,300px);
+        }
+    }
+    .prod-ch{
+        @extend .prod;
+        img{
+            @include imgprod(380px,200px);
+        }
+    }
+}
+
+/*Shop Online*/
+.seccion2{
+    background-color: #6b0f1a;
+    width: 100%;
+    height: 1200px;
+    color: gray;
+    font-family: 'Ramaraja', serif;
+    display: grid;
+    grid-template-columns: auto 400px 400px;
+    grid-template-rows: 600px 300px 300px;
+    grid-template-areas: 
+    "desc car car"
+    "sub1 sub2 sub3"
+    "sub1 sub4 sub5";
+
+    .subsection1{
+        font-family: 'Ramaraja', serif;
+        grid-area: sub1;
+        @include texto(center, center);
+        border-style: groove;
+        border-radius: 20px;
+        border-color: silver;
+        border-width: 10px;
+        padding: 20px;
+        .vo{
+            font-size: 40px;
+            font-family: 'Stardos Stencil';
+        }
+    }
+    .subsection1 li{
+        font-size: 25px;
+    }
+    .subsection2{
+        animation-duration: 1s;
+        background-color: rgb(60, 60, 59);
+        border-radius: 20px;
+        width: 350px;
+        height: 250px;
+        padding: 20px;
+        font-size: 20px;
+        grid-area: sub2;
+        @include texto(center, center);
+        display: grid;
+        grid-template-columns: 100px 200px;
+        grid-template-rows: 100px 100px;
+        grid-template-areas:"imag etiq"
+                            "p p";
+        p{
+            grid-area: p;
+            @include texto(center, center);
+        }
+        .img{
+            grid-area: imag;
+        }
+        .etiq{
+            grid-area: etiq;
+            @include texto(center, none);
+            font-size: 30px;
+            font-family: 'Stardos Stencil';
+        }
+    }
+    .subsection3{
+        animation-duration: 1s;
+        animation-delay: 1s;
+        grid-area: sub3;
+        @extend .subsection2;
+    }
+    .subsection4{
+        animation-duration: 1s;
+        animation-delay: 2s;
+        grid-area: sub4;
+        @extend .subsection2;
+    }
+    .subsection5{
+        animation-duration: 1s;
+        animation-delay: 3s;
+        grid-area: sub5;
+        @extend .subsection2;
+    }
+    .desc{
+        grid-area: desc;
+        font-size:x-large;
+        padding-left: 30px;
+        .tit{
+            font-family: 'Stardos Stencil';
+            font-size: 40px;
+        }
+    }
+    .car{
+        grid-area: car;
+        @include texto(center,center);  
+        @include imgprod(100%,600px);
+    }
+   
+}
+@media screen and (max-width:500px) {
+    .seccion2{
+        height: auto;
+        grid-template-columns: minmax(380px,500px);
+        grid-template-rows: 1300px 450px 600px 275px 275px 275px 275px;
+        grid-template-areas: 
+        "desc" 
+        "car"
+        "sub1"
+        "sub2" 
+        "sub3" 
+        "sub4"
+        "sub5";
+
+        .car{
+            @include imgprod(100%,auto);
+        }
+    }
+}
+/*Fin Shop Online*/
+
+/*Productos*/
+.enc{
+    background-color: #6b0f1a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Ramaraja', serif;
+    text-align: center;
+}
+.TodosProd{
+    background-color: #6b0f1a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    .productos{
+        img{
+            grid-area: img;
+            @include texto(center, center);
+            @include imgprod(380px,192px)
+        }
+    }
+    .productos2{
+        img{
+            grid-area: img;
+            @include texto(center, center);
+            @include imgprod(300px,300px)
+        }
+    }
+    .productos3{
+        img{
+            grid-area: img;
+            @include texto(center, center);
+            @include imgprod(380px,220px)
+        }
+    }
+    .carousel{
+        width: 400px;
+    }
+    .prod{
+        background-color: grey;
+        border-radius: 30px;
+        color: white;
+        display: grid;
+        padding-left: 39px;
+        grid-template-columns: 320px;
+        grid-template-rows: 400px 40px 140px 40px 50px;
+        grid-template-areas: 
+                            "img"
+                            "name"
+                            "des"
+                            "price"
+                            "button";
+        img{
+            grid-area: img;
+        }
+        name{
+            grid-area: name;
+            @include texto(center, center);
+            padding-bottom: 5px;
+        }
+        des{
+            grid-area: des;
+            @include texto(center, center);
+            padding-left: 20px;
+        }
+        price{
+            grid-area: price;
+            @include texto(center, center);
+        }
+    }
+}
+.boton{
+    background-color: #6b0f1a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40.5%;
+    button{
+        @include imgprod(50px,300px);
+    }
+}
+@media screen and (max-width:500px) {
+    .TodosProd{
+        flex-wrap: wrap;
+    }
+    .boton{
+        padding: 25px;
+        button{
+            @include imgprod(50px,100%);
+        }
+    }
+}
+/*Fin Productos*/
+
+
+.footnote{
+    background-color: rgb(34, 33, 33);
+    color: grey;
+    font-family: 'Ramaraja', serif;
+    text-align: center;
+    padding-top: 25px;
+    .fot{
+        font-size: x-large;
+        text-align: justify;
+        padding-left: 25%;
+        padding-right: 25%;
+        padding-bottom: 25px;
+    }
+}
+@media screen and (max-width:500px) {
+    .footnote{
+        .fot{
+            font-size: large;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+    }
+}
+
+/*Footer inicio*/
+footer{
+    background-color: rgb(34, 33, 33);
+    color: grey;
+    font-family: 'Ramaraja', serif;
+    font-size: 25px;
+    .red1{
+        width: auto;
+    }
+    .red2{
+        width: auto;
+    }
+    img{
+        height: 45px;
+    }
+    section#redes1{
+        display: flex;
+        gap: 15px;
+        padding-top: 5px;
+    }
+    section#redes2{
+        @extend section#redes1
+    }
+    .contacto{
+        width: auto;
+        display: grid;
+        grid-template-columns: auto 150px minmax(400px);
+        grid-template-rows: 40px auto auto auto;
+        grid-template-areas: 
+        "t   t    t   "
+        "ic1 con1 con1"
+        "ic2 con2 con2"
+        "ic3 con3 con3";
+        .titulo{
+            grid-area: t;
+        }
+        .ic1{
+            grid-area: ic1;
+            
+        }
+        .ic2{
+            grid-area: ic2;
+        }
+        .ic3{
+            grid-area: ic3;
+        }
+        section#con1{
+            grid-area: con1;
+            @include texto(center,none);
+        }
+        section#con2{
+            grid-area: con2;
+            @include texto(center,none);
+        }
+        section#con3{
+            grid-area: con3;
+            @include texto(center,none);
+        }
+
+    }
+}
+@media screen and (max-width:500px) {
+    footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .contacto{
+            grid-template-columns: auto 150px auto;
+            section#con3{
+                font-size: large;
+            }
+        }
+        .red1{
+            padding-top: 30px;
+            padding-bottom: 40px;
+        }
+    }
+}
+/*Footer final*/
+
+/*Copyrigth*/
+.copy{
+    background-color: rgb(34, 33, 33);
+    color: grey;
+    font-family: 'Ramaraja', serif;
+    display: inline-flex;
+    width: 100%;
+    justify-content: end;
+    h4{
+        margin: 0;
+        @include texto(center,center);
+        padding-top: 7px;
+    }
+}
+@media screen and (max-width:500px) {
+    .copy{
+        justify-content: center;
+    }
+}

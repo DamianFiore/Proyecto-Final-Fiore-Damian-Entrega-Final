@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "ETIOPIA",
+        "descripcion": "Un café muy dulce, con dejo de sabor a cítrico y floral. Acidez vivaz, un cuerpo sedoso y una complejidad de notas florales en el aroma, a veces con un toque de coco tostado.",
+        "precio": "1850",
+        "img": "./Imagenes/Etiopia.jpg"
+    },
+    {
+        "nombre": "COSTA RICA",
+        "descripcion": "De gran cuerpo y aroma, se asienta en boca, con notas achocolatadas hasta un rango de mayor complejidad, donde los buenos degustadores podrán encontrar sabores a los cítricos como naranja, además a melocotón, miel de abeja y vainilla, etc.",
+        "precio": "1500",
+        "img": "./Imagenes/Costa Rica.jpg"
+    },
+    { 
+        "nombre": "VAINILLA",
+        "descripcion": "Realizados con el grano 100% arabigo y extractos naturales hasta un 3%. Estos extractos se agregan durante el proceso de tostado, permitiendo deslizar un sutil sabor sin opacar la fuerza del cafe. Blend de granos 100 % arábigos.",
+        "precio": "1250",
+        "img": "./Imagenes/Vainilla.jpg"
+    },
+    {
+        "nombre": "CHOCOLATE",
+        "descripcion": "Realizados con el grano 100% arabigo y extractos naturales hasta un 3%. Estos extractos se agregan durante el proceso de tostado, permitiendo deslizar un sutil sabor sin opacar la fuerza del cafe.",
+        "precio": "1250",
+        "img": "./Imagenes/Chocolate.jpg"
+    },
+    {
+        "nombre": "CONGO",
+        "descripcion": "Elegante y brillante acidez de arándano, azúcar de caña y notas de ciruela con cuerpo almibarado y buen equilibrio.",
+        "precio": "1850",
+        "img": "./Imagenes/Congo.jpg"
+    },
+    {
+        "nombre": "COLOMBIAN DECAFF",
+        "descripcion": "Aroma muy fragante, con mucha dulzura. Tratado para remover la cafeína permitiendo al café, conservar su cuerpo aroma y sabor.",
+        "precio": "1250",
+        "img": "./Imagenes/Colombian Decaff.jpg"
+    },
+    {
+        "nombre": "COLOMBIAN DARK",
+        "descripcion": "Un café muy dulce, con dejo de sabor a cítrico y floral. Acidez vivaz, un cuerpo sedoso y una complejidad de notas florales en el aroma. Nuestro Colombian Supremo sometido al máximo tueste intensificando aroma, sabor y reduciendo acidez.",
+        "precio": "1250",
+        "img": "./Imagenes/Colombian Dark.jpg"
+    },
+    {
+        "nombre": "BRASIL SANTOS BOURDON",
+        "descripcion": "Blend de granos 100 % arábigos de Santos Bourbon en diferentes etapas, ciclos. El resultado un café más fino y equilibrado. Intensidad: Suave. Sofisticada selección de granos que conforman un blend suave y cremoso con un dejo levemente dulce.",
+        "precio": "1150",
+        "img": "./Imagenes/Brasil Santos Bourdon.jpg"
+    },
+    {
+        "nombre": "BRASIL MEDIUM ROAST",
+        "descripcion": "Un café muy dulce, con dejo de sabor a cítrico y floral. Acidez vivaz, un cuerpo sedoso y una complejidad de notas florales en el aroma. Nuestro Brasil Santos Bourbon con un tueste más intenso que potencia sus cualidades.",
+        "precio": "1150",
+        "img": "./Imagenes/Brasil Medium Roast.jpg"
+    },
+    {
+        "nombre": "PAPÚA NUEVA GUINEA",
+        "descripcion": "Esta región disfruta de un clima fresco, templado y con precipitaciones todo el año, lo que genera condiciones micro climáticas ideales para su cultivo. Sabor audaz, notas de chocolate, dulce, ácido y afrutado con un cuerpo medio a fuerte y un final ligeramente cremoso y suave.",
+        "precio": "1950",
+        "img": "./Imagenes/Papua Nueva Guinea.jpg"
+    }
+]
